@@ -15,7 +15,7 @@ then
   if [[ ! -z $2 ]]
   then
     echo "Adding necessary apt repository: $2"
-    sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
+    sudo add-apt-repository ppa:snappy-dev/tools
     sudo apt-get -qq update
   fi
   sudo apt-get -qq -y install $1;
